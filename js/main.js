@@ -1,7 +1,5 @@
-console.log('d');
 
 //Menu burger
-console.log('d');
 const iconMenu=document.querySelector('.menu__icon');
 if(true){
 	const bodyMenu=document.querySelector('.menu__body');

@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Test</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scrolable=0">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo">
+					<img src="img/pc.png" alt="">
+				</a>
+				<div class="header__menu menu">
+					<div class="menu__icon">
+						<span></span>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li><a href="" class="menu__link">Home</a></li>
+								<li><a href="" class="menu__link">About</a></li>
+								<li><a href="" class="menu__link">Tasks</a></li> 
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__container">
+				<div class="main__block task">
+					<div class="task__title">
+						<h2>BEGINNER JavaScript.</h2>
+					</div>
+					<div class="task__body">
+						<ol class="task__list">
+							<li> <div class="task__text">
+									<div class="task__conditions">Создайте переменную с помощью camelCase, snake_case и PascalCase и присвойте им значения от 0-я до 2-х. Выведите значения этих переменных на экран с помощью метода alert и console.log. Скажите, чем кардинально отличается alert и console.log?</div>
+									<div class="task__button">
+										<button onclick="task_1()" class="task__btn">Run</button>
+									</div>
+								</div>
+							</li>
+							<li> <div class="task__text">
+									<div class="task__conditions">Дана строка str = 'HTML'. Примените к ней определенный метод строк, чтобы все буквы стали маленькими. Выведите результат в консоль. Если есть затруднения, посмотрите, что такое методы у строк.</div>
+									<div class="task__button">
+										<button onclick="task_2()" class="task__btn">Run</button>
+									</div>
+								</div>
+							</li>
+							<li> <div class="task__text">
+									<div class="task__conditions">Спросите имя пользователя с помощью метода prompt. Выведите с помощью alert сообщение 'Ваше имя {имя}'.</div>
+									<div class="task__button">
+										<button onclick="task_3()" class="task__btn">Run</button>
+									</div>
+								</div>
+							</li>
+							<li> <div class="task__text">
+									<div class="task__conditions">Дан массив ['Саша', 'Петя', 'Оксана'], сделайте из него ['Оксанa', 'Олег', 'Саша']. Реализуйте эту задачу, двумя способами. В первом исходный массив должен быть изменен, во втором - не должен быть изменен.</div>
+									<div class="task__button">
+										<button onclick="task_4()" class="task__btn">Run</button>
+									</div>
+								</div>
+							</li>
+							<li> <div class="task__text">
+									<div class="task__conditions">Напишите скрипт, который принимает с клавиатуры 2 числа, и если первое больше второго, то выводит на экран их сумму, если же наоборот - произведение. Если числа одинаковые, выводит на экран 'числа одинаковые'.</div>
+									<div class="task__button">
+										<button onclick="task_5()" class="task__btn">Run</button>
+									</div>
+								</div>
+							</li>
+							<li> <div class="task__text">
+									<div class="task__conditions">Дан массив числами, например: [10, 20, 30, 50, 235, 3000]. Выведите на экран только те числа из массива, которые начинаются на цифру 1, 2 или 5.</div>
+									<div class="task__button">
+										<button onclick="task_6()" class="task__btn">Run</button>
+									</div>
+								</div>
+							</li>
+							<li> <div class="task__text">
+									<div class="task__conditions">Вес записан в переменную weight. Рекомендацию записывай строкой в переменную recommendation. Если вес до 4 кг (не включая это значение), рекомендация – 'Пора перекусить'. Если вес от 4 кг включительно до 5.5 кг включительно – 'Вес в норме'.Если вес больше 5.5 кг – 'Пора на тренировку'. В качестве условий, используй значения weight 1, 3, 4, 5, 10. Рекомендацию выводи в консоль.</div>
+									<div class="task__button">
+										<button onclick="task_7()" class="task__btn">Run</button>
+									</div>
+								</div>
+							</li>
+							<li> <div class="task__text">
+									<div class="task__conditions">
+										Напишите функцию, которая вычисляет итоговую оценку студента в зависимости от двух параметров: оценки за экзамен и количества выполненных проектов. Ваша функция должна принимать два аргумента: экзамен - оценка за экзамен (от 0 до 100); проекты - количество реализованных проектов (от 0 и выше); Эта функция должна возвращать число (итоговая оценка).
+									</div>
+									<div class="task__button">
+										<button onclick="task_8()" class="task__btn">Run</button>
+									</div>
+								</div>
+							</li>
+							<li> <div class="task__text">
+									<div class="task__conditions">Напишите функцию, которая принимает в себя массив, а возвращает произведение элементов массива, умноженных по порядку друг на друга.</div>
+									<div class="task__button">
+										<button onclick="task_9()" class="task__btn">Run</button>
+									</div>
+								</div>
+							</li>
+							<li> <div class="task__text">
+									<div class="task__conditions">Напишите функцию, которая будет принимать в себя массив c именами, и возвращать массив, но уже с удаленными нежелательными именами. Массив с нежелательными именами должен быть внутри вашей функции: const unwantedNames = [“Дима”, “Саша”, ”Ольга”, ‘Никита”].</div>
+									<div class="task__button">
+										<button onclick="task_10()" class="task__btn">Run</button>
+									</div>
+								</div>
+							</li>
+							<li> <div class="task__text">
+									<div class="task__conditions">В этом упражнении должны написать программу, которая будет принимать в качестве параметров два массива целых чисел. Необходимо найти произведение каждого массива, после чего найти разность двух массивов, вне зависимости, какой из них больше. Если напишите решение в одну строчку, будете молодцы.</div>
+									<div class="task__button">
+										<button onclick="task_11()" class="task__btn">Run</button>
+									</div>
+								</div>
+							</li>
+							<li> <div class="task__text">
+									<div class="task__conditions">Завершите функцию, которая принимает два целых числа ( a, b, где a <  b) и возвращает массив всех целых чисел между входными параметрами, включая их.</div>
+									<div class="task__button">
+										<button onclick="task_12()" class="task__btn">Run</button>
+									</div>
+								</div>
+							</li>
+							<li> <div class="task__text">
+									<div class="task__conditions">Напишите функцию, которая преобразует шестнадцатеричное число (заданное в виде строки) в десятичное число.</div>
+									<div class="task__button">
+										<button onclick="task_13()" class="task__btn">Run</button>
+									</div>
+								</div>
+							</li>
+							<li> <div class="task__text">
+									<div class="task__conditions">Удалите n восклицательных знаков в предложении слева направо. n - положительное целое число.</div>
+									<div class="task__button">
+										<button onclick="task_14()" class="task__btn">Run</button>
+									</div>
+								</div>
+							</li>
+							<li> <div class="task__text">
+									<div class="task__conditions">Вы должны реализовать функцию, которая возвращает разницу между наибольшим и наименьшим значением в списке , полученном в качестве аргумента функции. Массив, который получает функция в качестве аргумента, может содержать положительные и отрицательные числа. Если массив пуст или имеет одно значение, верните ноль. Изначально, массив будет подан в неотсортированном виде. Пример: maxDiff([1, 2, 3, -4]); // вернет 7, потому что: 3 - (-4) == 7</div>
+									<div class="task__button">
+										<button onclick="task_15()" class="task__btn">Run</button>
+									</div>
+								</div>
+							</li>
+							<li> <div class="task__text">
+									<div class="task__conditions">Напишите функцию, которая принимает в себя строку и число. Верните, в виде массива, только те слова, длинна которых превышает число.</div>
+									<div class="task__button">
+										<button onclick="task_16()" class="task__btn">Run</button>
+									</div>
+								</div>
+							</li>
+							<li> <div class="task__text">
+									<div class="task__conditions">Уловка, которую я изучил в начальной школе, чтобы определить, делится ли число на три, состоит в том, чтобы сложить все целые числа в числе и разделить полученную сумму на три. Если от деления суммы на три нет остатка, то исходное число также делится на три. Учитывая серию цифр в виде строки, определите, делится ли число, представленное строкой, на три. Примечание: Старайтесь избегать использования оператора % (остаток от деления). Число, которое будет принимать в себя функция - всегда будет строка.</div>
+									<div class="task__button">
+										<button onclick="task_17()" class="task__btn">Run</button>
+									</div>
+								</div>
+							</li>
+							<li> <div class="task__text">
+									<div class="task__conditions">Никаких разговоров. Никаких объяснений. Только ТЗ и результат, который должен быть. Посмотрите, что должно получиться на выходе и напишите эту функцию.Пример кода:spacey(['kevin', 'has','no','space']) => [ 'kevin', 'kevinhas', 'kevinhasno', 'kevinhasnospace']</div>
+									<div class="task__button">
+										<button onclick="task_18()" class="task__btn">Run</button>
+									</div>
+								</div>
+							</li>
+							<li> <div class="task__text">
+									<div class="task__conditions">Если число четное, преобразуйте его в двоичное. Если число нечетное, преобразуйте его в шестнадцатеричное.</div>
+									<div class="task__button">
+										<button onclick="task_19()" class="task__btn">Run</button>
+									</div>
+								</div>
+							</li>
+							<li> <div class="task__text">
+									<div class="task__conditions">Необходимо реализовать функцию, которая на входе принимает массив с разными типами данных ==> ['a', 1, 2, false, 'b'], а возвращает объект, в котором эти типы данных рассортированны по ключам.</div>
+									<div class="task__button">
+										<button onclick="task_20()" class="task__btn">Run</button>
+									</div>
+								</div>
+							</li>
+							<li> <div class="task__text">
+									<div class="task__conditions">Дана строка, состоящяя из букв a,b,c. Ваша задача поменять расположение букв a и b, но не трогать c.</div>
+									<div class="task__button">
+										<button onclick="task_21()" class="task__btn">Run</button>
+									</div>
+								</div>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+<script src='js/main.js'></script>
+<script src='js/tasks.js'></script>
+</body>
+</html>
+

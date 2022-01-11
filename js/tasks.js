@@ -283,13 +283,24 @@ function evensAndOdds(a){
 	}
 }
 function task_20() {
-	let arr=['a', 1, 2, false, 'b'];
-	arrayToObject(arr);
+	let arr=['a', 1,2, false, 'b'];
+	let objResult;
+	console.log(objResult=arrayToObject(arr));
+
 }
 function arrayToObject(arr){
-	let Obj
-	return Obj;
-}
+	let obj= {};
+
+  for(let key of arr) {
+    if(Array.isArray(obj[typeof key])) {
+      obj[typeof key].push(key);
+    } else {
+      obj[typeof key] = [];
+      obj[typeof key].push(key);
+    }
+  }
+  return obj;
+ }
 function task_21() {
 	let str='aabacbaa';
 	alert(`${str}=>${switcheroo(str)}`);
